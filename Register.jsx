@@ -10,69 +10,69 @@ const Register = () => {
 
     const handleRegister = async (e) => {
         e.preventDefault();
-        // Xử lý logic gọi API đăng ký tại đây
+        // Logic handles registration API submission natively
     };
 
     return (
-        <div class="register-container card mx-auto my-5 p-4 shadow" style={{maxWidth: "500px"}}>
-            <h2 class="text-center mb-4">Create Your Account</h2>
+        <div className="register-container card mx-auto my-5 p-4 shadow" style={{maxWidth: "500px"}}>
+            <h2 className="text-center mb-4">Create Your Account</h2>
             <form onSubmit={handleRegister}>
-                <div class="mb-3">
-                    <label class="form-label">Username</label>
+                <div className="mb-3">
+                    <label className="form-label">Username</label>
                     <input 
                         type="text" 
-                        class="form-control" 
+                        className="form-control" 
                         value={userName} 
                         onChange={(e) => setUserName(e.target.value)} 
                         placeholder="Enter your username" 
                         required 
                     />
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">First Name</label>
+                <div className="mb-3">
+                    <label className="form-label">First Name</label>
                     <input 
                         type="text" 
-                        class="form-control" 
+                        className="form-control" 
                         value={firstName} 
                         onChange={(e) => setFirstName(e.target.value)} 
                         placeholder="Enter your first name" 
                         required 
                     />
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Last Name</label>
+                <div className="mb-3">
+                    <label className="form-label">Last Name</label>
                     <input 
                         type="text" 
-                        class="form-control" 
+                        className="form-control" 
                         value={lastName} 
                         onChange={(e) => setLastName(e.target.value)} 
                         placeholder="Enter your last name" 
                         required 
                     />
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Email Address</label>
+                <div className="mb-3">
+                    <label className="form-label">Email Address</label>
                     <input 
                         type="email" 
-                        class="form-control" 
+                        className="form-control" 
                         value={email} 
                         onChange={(e) => setEmail(e.target.value)} 
                         placeholder="Enter your email address" 
                         required 
                     />
                 </div>
-                <div class="mb-4">
-                    <label class="form-label">Password</label>
+                <div className="mb-4">
+                    <label className="form-label">Password</label>
                     <input 
                         type="password" 
-                        class="form-control" 
+                        className="form-control" 
                         value={password} 
                         onChange={(e) => setPassword(e.target.value)} 
                         placeholder="Enter your account password" 
                         required 
                     />
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Register</button>
+                <button type="submit" className="btn btn-primary w-100">Register</button>
             </form>
         </div>
     );
